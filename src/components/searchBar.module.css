@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-left: 20px;
+   
+}
+
+.botonSearch {
+   
+    background-color: rgb(87, 175, 175);
+    color: rgb(131, 233, 233);
+    font-family: sans-serif;
+    color: white;
+    border-radius: 10%;
+    justify-content: space-evenly;
+    
+}
