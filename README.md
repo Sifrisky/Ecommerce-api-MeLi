@@ -1,7 +1,16 @@
-# Getting Started with Create React App
+# IAM ecommerce
+
+_Online Shop_
+E-commerce project in React and postgress.
+# Preview
+![](docs/screenshot.png)
+
+## Comenzando 🚀
+
+_About Project_
 
 
-Labs Challenge
+# Labs Challenge
 El objetivo del challenge es construir un Front-End y un Back-End que interactuen con una API externa.
 
 Vamos a usar la API pública de Mercado Libre. De ella vamos a extraer publicaciones que luego vamos a guardar en nuestro propio back-end usando un caché. Para el Fron-end vamos a desarrollar una serie de Componentes de React para poder mostrar e interactuar con las publicaciones antes mencionadas.
@@ -87,12 +96,85 @@ Poder ordenar los productos en base a su precio, de forma ascendete o descendent
 Poder filtrar por condicion.
 Poder páginar los resultados de a 30 productos por página.
 
-Notas
-Crear un repo nuevo en tu github (privado o público) y compartirlo con Antonio Tralice <toni@soyhenry.com> una vez que hayas terminado.
+******************************************************************************************
+See the section about [deployment](https://) for more information.
 
-Podes usar cualquier librería extra para resolver el challenge ya sea de front-end o de back-end. Recomendamos usar alguna librería de front-end (Boostrap, materialize, etc...).
 
-Tenes cómo máximo dos semanas para completar el challenge.
+### Pre-requisitos 📋
 
-****
-npm install axios
+_Que instalar y como instalarlas_
+```
+npx create-react-app my-app
+
+```
+npm install
+```
+
+### Instalación  🔧
+
+_Pasos de lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+
+_como es el paso_
+
+```
+Ejemplo?
+```
+
+_repito_
+
+```
+finalizar
+```
+
+## Ejecutando las pruebas ⚙️
+
+_como?_
+
+npm start
+```
+
+## Despliegue 📦
+
+_nota de como hacer deploy_
+
+## Construido con 🛠️
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+This project was created with:
+* [Create React App](https://github.com/facebook/create-react-app).
+* [Bootstrapped](https://  /) - El framework web
+* [OTHER](https:// INSERT HERE /) - Use for
+* [OTHER](https:// INSERT HERE /) - Use for 
+
+
+## Wiki or other 📖
+
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+
+## Versionado 📌
+
+Usamos las versiones:
+
+ * __Node__: 12.18.3 o mayor
+ * __NPM__: 6.14.16 o mayor
+
+Para verificar que versión tienen instalada:
+
+> node -v
+>
+> npm -v
+
+## Autores ✒️
+
+Desde - *Trabajo Inicial* -  *Documentación* - *Planificación* - *Maquetado* -
+* **Astrid Medina** - [Sifrisky](https://github.com/Sifrisky)
+
+## Agradecimientos 🎁
+
+* Estamos muy contentos con el desarrollo del proyecto y la finalización del mismo y queremos mostrarselos a todos 📢
+* Agradezo a Tony Tralice ... 🤓.
+* etc.
+
+---
+⌨️ con ❤️ por [Sifrisky] para Henry (Agregar Linkedin) 😊
