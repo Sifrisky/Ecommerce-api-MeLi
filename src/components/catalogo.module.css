@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 .container {
  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  font-family: 'Poiret One', cursive;
  }
      

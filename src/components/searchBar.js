@@ -29,13 +29,15 @@ const SearchBar = ({ onSearch, onClear }) => {
           className="form-control mr-2"
           value={search}
           type="text"
-          placeholder="Buscar productos, marcas y más..."
+          placeholder="BUSCAR"
           aria-label="Search"
         ></input>
       </div>
-      <button className="btn btn-dark ml-2 mr-1" type="submit">
+      <button className={styles.botonSearch} type="submit">
         {" "}
-        Submit{" "}
+        <i class="fas fa-paper-plane"></i>
+
+{" "}
       </button>
       {/* <button className="btn btn-dark my-sm-0" type="button" onClick={onClear} > Clear </button>*/}
       <div />

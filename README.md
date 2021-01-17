@@ -108,6 +108,8 @@ npx create-react-app my-app
 
 ```
 npm install
+npm install axios
+npm i bootstrap reactstrap (para estilos y carrusel)
 ```
 
 ### Instalación  🔧
@@ -115,7 +117,10 @@ npm install
 _Pasos de lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
 _como es el paso_
+ para el carrusel: https://reactstrap.github.io/components/carousel/
+ instalar sass: npm install -g sass
 
+ 
 ```
 Ejemplo?
 ```

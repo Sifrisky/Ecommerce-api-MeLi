@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 .container {
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
     margin-left: 20px;
+    font-family: 'Poiret One', cursive;
    
 }
 
@@ -10,9 +13,31 @@
    
     background-color: rgb(87, 175, 175);
     color: rgb(131, 233, 233);
-    font-family: sans-serif;
+    font-family: 'Poiret One', cursive;
     color: white;
     border-radius: 10%;
     justify-content: space-evenly;
     
 }
+
+.headerStyle {
+
+    margin: 1px 43px 0 674px;
+    font-family: 'Poiret One', cursive;
+}
+
+.botonSearch {
+
+    color: #FFFF;
+    background-color: #CC57EA;
+    border-color: #CC57EA;
+    border-width: 0;
+    padding: 0px 11px;
+    font-family: 'Poiret One', cursive;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+

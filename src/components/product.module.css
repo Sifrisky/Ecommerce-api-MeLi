@@ -1,20 +1,29 @@
-.product {
-    margin: 20px;
-    width: 18rem;
-  }
-  
-  .product-title {
-    margin-bottom: 15px;
-  }
-  
-  #closeIcon {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 8px;
-    margin-top: 8px;
-  }
-  
-  .product-body {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
-  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+.imageproduct {
+
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.titulo1{
+
+  padding: 70px 170px;
+
+font-family: 'Poiret One', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 30px;
+/* identical to box height */
+
+/*display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;*/
+
+color: #131212;
+
+}
