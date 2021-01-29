@@ -4,34 +4,42 @@
 import React, { useState } from "react";
 import styles from "./searchBar.module.css";
 
-const SearchBar = ({ onSearch, onClear }) => {
-  const [search, setSearch] = useState();
+const SearchBar = ({ busqueda }) => {
+  const [state, setState] = useState({
+    search: null,
+    showCat: false
+  });
 
-  const handlerInput = (e) => {
-    setSearch(e.target.value);
-  };
+  
 
-  const handlerSubmit = (e) => {
+  const onSubmit = (e) =>{
+    //Evitar que refresque la pagina
     e.preventDefault();
-    onSearch(search);
-    setSearch("");
-  };
+    busqueda(state.search)
+
+}
+const onChange = (e) =>{
+    //Guardamos lo que el usuario escriba para el posterior envio
+    setState({
+        ...state, 
+        search: e.target.value
+    })
+}
 
   return (
     <form
       className={styles.container}
-      onSubmit={handlerSubmit}
+      onSubmit={onSubmit}
       className="d-flex col-12 justify-content-center justify-content-lg-end"
     >
       <div>
         <input
-          onChange={handlerInput}
           className="form-control mr-2"
-          value={search}
           type="text"
-          placeholder="BUSCAR"
+          placeholder="BUSCAR PRODUCTO"
           aria-label="Search"
-        ></input>
+          onChange={onChange}>
+        </input>
       </div>
       <button className={styles.botonSearch} type="submit">
         {" "}

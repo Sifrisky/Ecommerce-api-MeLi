@@ -39,10 +39,10 @@ const Slider = () => {
       })}
       {/*agregaremos dos botones para navegar*/}
       <button id="goLeft" onClick={goLeft}>
-        left
+      <i class="fas fa-chevron-left"></i>
       </button>
       <button id="goRight" onClick={goRight}>
-        right
+      <i class="fas fa-chevron-right"></i>
       </button>
     </div>
   );

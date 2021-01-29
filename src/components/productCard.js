@@ -18,7 +18,7 @@ import styles from "./product.module.css";
 export default function ProductCard() {
   const [product, setProduct] = useState("");
 
-  const url = "https://api.mercadolibre.com/sites/MLA/search?q=iphone";
+  const url = "https://api.mercadolibre.com/sites/MLA/search?q=zapatilla";
 
   useEffect(() => {
     axios
@@ -42,7 +42,8 @@ export default function ProductCard() {
 
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className=" 
+          col-md-12">
             <div className={styles.product}>
               {product &&
                 product.map((p) => (
@@ -50,50 +51,6 @@ export default function ProductCard() {
                     <img className={styles.imageproduct} src={p.thumbnail} />
                     <p>{p.title}</p>
                     <p>{p.price}</p>
-                    <p>{p.stock}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
-
-          <div className="col-md-3">
-            <div className={styles.product}>
-              {product &&
-                product.map((p) => (
-                  <div id={p.id}>
-                    <img className={styles.imageproduct} src={p.thumbnail} />
-                    <p>{p.title}</p>
-                    <p>{p.price}</p>
-                    <p>{p.stock}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
-
-          <div className="col-md-3">
-            <div className={styles.product}>
-              {product &&
-                product.map((p) => (
-                  <div id={p.id}>
-                    <img className={styles.imageproduct} src={p.thumbnail} />
-                    <p>{p.title}</p>
-                    <p>{p.price}</p>
-                    <p>{p.stock}</p>
-                  </div>
-                ))}
-            </div>
-          </div>
-
-          <div className="col-md-3">
-            <div className={styles.product}>
-              {product &&
-                product.map((p) => (
-                  <div id={p.id}>
-                    <img className={styles.imageproduct} src={p.thumbnail} />
-
-                    <p>{p.title}</p>
-                    <p>{p.price}</p>
-                    <p>{p.stock}</p>
                   </div>
                 ))}
             </div>

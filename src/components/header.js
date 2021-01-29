@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "./searchBar.js";
 import Styles from "./searchBar.module.css";
-import logo1 from "../img/logo1.png";
+import logo1 from "../img/logo2.png";
 
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
       <div className="col-md-12">
 
          
-        <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+        <nav class=" navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">
                       
             <img src={logo1} className={Styles.logo}></img>  SHOP
@@ -31,11 +31,7 @@ export default function Header() {
        
           <div className= "collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  Home <span class="sr-only">(current)</span>
-                </a>
-              </li>
+      
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   Products
@@ -44,6 +40,11 @@ export default function Header() {
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   Catalogo
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Contact
                 </a>
               </li>
               <li className={Styles.headerStyle} >
