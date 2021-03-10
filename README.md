@@ -3,7 +3,7 @@
 _Online Shop_
 E-commerce project in React and postgress.
 # Preview
-![](docs/screenshot.png)
+![](public/screenshot.png)
 
 ## Comenzando 🚀
 
