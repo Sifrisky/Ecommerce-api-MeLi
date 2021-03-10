@@ -81,8 +81,7 @@ _* Front-End. Crear una App en React con los siguientes componentes:_
 
 _* SearchBar. Un formulario controlado con un input de búsqueda, que dispare los requests a la API (a nuestro BACK-END, no a Mercado Libre)._
 
-_* Product Card.
-En este componente se muestra un producto en particular, debemos mostrar:_
+_* Product Card. En este componente se muestra un producto en particular, debemos mostrar:_
 
 - su imagen.
 - su titulo.
@@ -90,12 +89,11 @@ En este componente se muestra un producto en particular, debemos mostrar:_
 - su condicion.
 - si tiene stock o no.
 
-_ * Catalogo.
-_Este componente va mostrar un arreglo de productos (obtenidos de la API) usando Product Card. Tambien debe posibilitar:_
+_* Catalogo. Este componente va mostrar un arreglo de productos (obtenidos de la API) usando Product Card. Tambien debe posibilitar:_
 
-- Poder ordenar los productos en base a su precio, de forma ascendete o descendente.
-- Poder filtrar por condicion.
-- Poder páginar los resultados de a 30 productos por página.
+- Ordenar los productos en base a su precio, de forma ascendete o descendente.
+- Filtrar por condicion.
+- Páginar los resultados de a 30 productos por página.
 
 ******************************************************************************************
 See the section about [deployment](https://) for more information.
