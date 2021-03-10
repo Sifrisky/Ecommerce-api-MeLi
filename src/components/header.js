@@ -33,17 +33,17 @@ export default function Header() {
             <ul class="navbar-nav">
       
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/product">
                   Products
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/catalogo">
                   Catalogo
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/contact">
                   Contact
                 </a>
               </li>
@@ -52,12 +52,8 @@ export default function Header() {
               </li>
             </ul>
           </div>
-        
         </nav>
-
         </div>
         </div>
-    
-    
   );
 }

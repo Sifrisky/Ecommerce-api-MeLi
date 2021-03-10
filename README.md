@@ -3,21 +3,18 @@
 _Online Shop_
 E-commerce project in React and postgress.
 # Preview
-![](docs/screenshot.png)
+![](public/screenshot.png)
 
 ## Comenzando 🚀
 
-_About Project_
+_El objetivo del challenge es construir un Front-End y un Back-End que interactuen con una API externa._
 
+_Vamos a usar la API pública de Mercado Libre. De ella vamos a extraer publicaciones que luego vamos a guardar en nuestro propio back-end usando un caché. Para el Fron-end vamos a desarrollar una serie de Componentes de React para poder mostrar e interactuar con las publicaciones antes mencionadas._
 
-# Labs Challenge
-El objetivo del challenge es construir un Front-End y un Back-End que interactuen con una API externa.
+_Back-End
+Usaremos el siguiente endpoint de Mercado Libre https://api.mercadolibre.com/sites/MLA/search?q={query}. Recibe un queryString con el parámetro q con un string que indica el keyword a buscar. La API retorna un JSON con la siguiente forma:_
 
-Vamos a usar la API pública de Mercado Libre. De ella vamos a extraer publicaciones que luego vamos a guardar en nuestro propio back-end usando un caché. Para el Fron-end vamos a desarrollar una serie de Componentes de React para poder mostrar e interactuar con las publicaciones antes mencionadas.
-
-Back-End
-Usaremos el siguiente endpoint de Mercado Libre https://api.mercadolibre.com/sites/MLA/search?q={query}. Recibe un queryString con el parámetro q con un string que indica el keyword a buscar. La API retorna un JSON con la siguiente forma:
-
+```
 {
   "site_id": "MLA",
   "query": "iphone",
@@ -44,6 +41,7 @@ Usaremos el siguiente endpoint de Mercado Libre https://api.mercadolibre.com/sit
   "filters": [],
   "available_filters": []
 }
+```
 Podemos ver la documentación completa del endpoint en este link.
 
 Nuestro Back-End va a tener la ruta:
@@ -51,7 +49,7 @@ Nuestro Back-End va a tener la ruta:
 /api/search
 /api/search
 Esta ruta recibe un queryString con un término de búsqueda. Por ejemplo: /api/search?query=zapatillas. Y debe retornar un arreglo de items de Mercado Libre con la forma:
-
+```
 [
   {
       "id": "MLA785937833",
@@ -72,29 +70,26 @@ Esta ruta recibe un queryString con un término de búsqueda. Por ejemplo: /api/
       "condition": "new"
   }
 ]
-Extra-Credit: En cada request de búsqueda, se deberá crear un caché, de tal manera que a la siguiente búsqueda no se use la API de Mercado Libre, si no que los datos se recuperen del caché. Tip: Usar un objeto (cada propiedad es al término de búsqueda y el valor de esa propiedad el arreglo de resultados.)
+```
+_En cada request de búsqueda, se deberá crear un caché, de tal manera que a la siguiente búsqueda no se use la API de Mercado Libre, si no que los datos se recuperen del caché. Tip: Usar un objeto (cada propiedad es al término de búsqueda y el valor de esa propiedad el arreglo de resultados.)_
 
-Front-End
-Deberás crear una App en React con los siguientes componentes:
+_* Front-End. Crear una App en React con los siguientes componentes:_
 
-SearchBar
-Un formulario controlado con un input de búsqueda, que dispare los requests a la API (a nuestro BACK-END, no a Mercado Libre).
+_* SearchBar. Un formulario controlado con un input de búsqueda, que dispare los requests a la API (a nuestro BACK-END, no a Mercado Libre)._
 
-Product Card
-En este componente se muestra un producto en particular, debemos mostrar:
+_* Product Card. En este componente se muestra un producto en particular, debemos mostrar:_
 
-su imagen.
-su titulo.
-su precio (con la moneda).
-su condicion.
-si tiene stock o no.
+- su imagen.
+- su titulo.
+- su precio (con la moneda).
+- su condicion.
+- si tiene stock o no.
 
-Catalogo
-Este componente va mostrar un arreglo de productos (obtenidos de la API) usando Product Card. Tambien debe posibilitar:
+_* Catalogo. Este componente va mostrar un arreglo de productos (obtenidos de la API) usando Product Card. Tambien debe posibilitar:_
 
-Poder ordenar los productos en base a su precio, de forma ascendete o descendente.
-Poder filtrar por condicion.
-Poder páginar los resultados de a 30 productos por página.
+- Ordenar los productos en base a su precio, de forma ascendete o descendente.
+- Filtrar por condicion.
+- Páginar los resultados de a 30 productos por página.
 
 ******************************************************************************************
 See the section about [deployment](https://) for more information.
@@ -102,60 +97,41 @@ See the section about [deployment](https://) for more information.
 
 ### Pre-requisitos 📋
 
-_Que instalar y como instalarlas_
+
 ```
 npx create-react-app my-app
+```
+
+### Instalación  🔧
 
 ```
 npm install
 npm install axios
 npm i bootstrap reactstrap (para estilos y carrusel)
+npm install -g sass
+para el carrusel: https://reactstrap.github.io/components/carousel/
+
 ```
-
-### Instalación  🔧
-
-_Pasos de lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_como es el paso_
- para el carrusel: https://reactstrap.github.io/components/carousel/
- instalar sass: npm install -g sass
-
  
-```
-Ejemplo?
-```
-
-_repito_
-
-```
-finalizar
-```
 
 ## Ejecutando las pruebas ⚙️
 
-_como?_
-
+```
 npm start
 ```
 
 ## Despliegue 📦
 
-_nota de como hacer deploy_
+_El deployment se realizo con herokuapp_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-This project was created with:
+_This project was created with:_
 * [Create React App](https://github.com/facebook/create-react-app).
 * [Bootstrapped](https://  /) - El framework web
 * [OTHER](https:// INSERT HERE /) - Use for
 * [OTHER](https:// INSERT HERE /) - Use for 
 
-
-## Wiki or other 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
 
 ## Versionado 📌
 
@@ -177,9 +153,8 @@ Desde - *Trabajo Inicial* -  *Documentación* - *Planificación* - *Maquetado* -
 
 ## Agradecimientos 🎁
 
-* Estamos muy contentos con el desarrollo del proyecto y la finalización del mismo y queremos mostrarselos a todos 📢
-* Agradezo a Tony Tralice ... 🤓.
-* etc.
+* Estoy muy contenta con el desarrollo del proyecto y la finalización del mismo y queremos mostrarselos a todos 📢
+* Agradezo a Tony Tralice por todo su apoyo y consejos 🤓.
 
 ---
-⌨️ con ❤️ por [Sifrisky] para Henry (Agregar Linkedin) 😊
+⌨️ con ❤️ por [Sifrisky] para Henry (https://www.linkedin.com/in/astrid-medina/) 😊
