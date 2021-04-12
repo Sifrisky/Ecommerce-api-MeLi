@@ -1,7 +1,8 @@
 # IAM ecommerce
 
 _Online Shop_
-E-commerce project in React and postgress.
+E-commerce project in React and postgress. 
+see deployment. https://vast-woodland-28811.herokuapp.com/
 # Preview
 ![](public/screenshot.png)
 
